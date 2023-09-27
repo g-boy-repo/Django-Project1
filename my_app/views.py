@@ -9,3 +9,7 @@ def index(request):
 
 def about(request):
     return HttpResponse("About page")
+
+
+def hello(request, first_name):
+    return HttpResponse(f"Hello {first_name}")
